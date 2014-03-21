@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet">
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div data-theme="e" data-role="page" id="utama">
+            <div data-theme="e" data-role="header">
+                <h1>MULTIMEDIA</h1>
+            </div>
+            <div data-theme="e" data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#video">Video</a>
+                    </li>
+                    <li>
+                        <a href="#image">Image</a>
+                    </li>
+                    <li>
+                        <a href="#music">Music</a>
+                    </li>
+                    <li>
+                        <a href="#animation">Animation</a>
+                    </li>
+                    <li>
+                        <a href="#text">Text</a>
+                    </li>
+                </ul>
+            </div>
+            <div data-theme="e" data-role="footer">
+                <h1>Created By - Stephanus Prasetyo Ade</h1>
+                <div data-theme="e" data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#text" data-icon="back" data-rel="page" data-transition="flip">&lt;&lt; Previous </a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#video">Next &gt;&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		<div data-theme="e" data-role="page" id="video">
+            <div data-theme="e" data-role="header">
+                <h1>Video</h1>
+            </div>
+            <div data-theme="e" data-role="content">
+				<video width="320" height="240" controls>
+					<source src="movie/movie.mp4" type="video/mp4">
+				</video>	
+			</div>
+            <div data-theme="e" data-theme="e" data-role="footer">
+                <h1>Footer</h1>
+                <div data-theme="e" data-theme="e" data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#utama" data-icon="back" data-rel="page" data-transition="flip">&lt;&lt; Previous </a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#utama" data-icon="hom">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#image">Next &gt;&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-theme="e" data-role="page" id="image">
+            <div data-theme="e" data-role="header">
+                <h1>Image</h1>
+            </div>
+            <div data-theme="e" data-role="content">
+                <img src="images/logo sttar.jpg" width="280" height="280">
+            </div>
+            <div data-theme="e" data-role="footer">
+                <h1>Footer</h1>
+                <div data-theme="e" data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#video" data-icon="back" data-rel="page" data-transition="flip">&lt;&lt; Previous </a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#utama" data-icon="hom">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#animation">Next &gt;&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-theme="e" data-role="page" id="animation">
+            <div data-theme="e" data-role="header">
+                <h1>Animation</h1>
+            </div>
+            <div data-theme="e" data-role="content">
+				<img src="images/men.gif" width="280" height="280">
+			</div>
+            <div data-theme="e" data-role="footer">
+                <h1>Footer</h1>
+                <div data-theme="e" data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#image" data-icon="back" data-rel="page" data-transition="flip">&lt;&lt; Previous </a>
+                        </li>
+                        <li>
+                            <a data-role="button" data-icon="hom">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#music">Next &gt;&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-theme="e" data-role="page" id="music">
+            <div data-theme="e" data-role="header">
+                <h1>Music</h1>
+            </div>
+            <div data-theme="e" data-role="content">
+				<audio controls>
+					<source src="music/blackberry_smile.mp3" type="mp3">
+				</audio>
+			</div>
+            <div data-theme="e" data-role="footer">
+                <h1>Footer</h1>
+                <div data-theme="e" data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#animation" data-icon="back" data-rel="page" data-transition="flip">&lt;&lt; Previous </a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#utama" data-icon="hom">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#text">Next &gt;&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-theme="e" data-role="page" id="text">
+            <div data-theme="e" data-role="header">
+                <h1>Dummy Text</h1>
+            </div>
+            <div data-theme="e" data-role="content">
+                <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                    minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                    ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+                    velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                    augue duis dolore te feugait nulla facilisi.</span>
+            </div>
+            <div data-theme="e" data-role="footer">
+                <h1>Footer</h1>
+                <div data-theme="e" data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#music" data-icon="back" data-rel="page" data-transition="flip">&lt;&lt; Previous </a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#utama" data-icon="hom">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#utama">Next &gt;&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
